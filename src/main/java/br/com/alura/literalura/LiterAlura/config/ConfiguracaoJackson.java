@@ -1,10 +1,9 @@
 package br.com.alura.literalura.LiterAlura.config;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 
 /**
  * Configuracao do Jackson para processamento de JSON
@@ -14,6 +13,7 @@ public class ConfiguracaoJackson {
 
     /**
      * Cria e configura um ObjectMapper para processamento de JSON
+     *
      * @return ObjectMapper configurado
      */
     @Bean

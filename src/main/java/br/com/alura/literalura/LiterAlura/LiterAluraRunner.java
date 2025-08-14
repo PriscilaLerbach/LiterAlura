@@ -330,7 +330,7 @@ public class LiterAluraRunner implements CommandLineRunner {
      * Formata um livro para exibição
      *
      * @param livro Livro a ser formatado
-     * @param sb StringBuilder para acumular a formatação
+     * @param sb    StringBuilder para acumular a formatação
      */
     private void formatarLivro(Livro livro, StringBuilder sb) {
         sb.append("---------------------------\n");
@@ -368,7 +368,7 @@ public class LiterAluraRunner implements CommandLineRunner {
      * Formata um autor para exibição
      *
      * @param autor Autor a ser formatado
-     * @param sb StringBuilder para acumular a formatação
+     * @param sb    StringBuilder para acumular a formatação
      */
     private void formatarAutor(Autor autor, StringBuilder sb) {
         sb.append("---------------------------\n");

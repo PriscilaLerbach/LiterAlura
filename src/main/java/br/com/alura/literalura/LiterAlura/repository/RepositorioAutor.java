@@ -1,12 +1,12 @@
 package br.com.alura.literalura.LiterAlura.repository;
 
-import java.util.List;
-
 import br.com.alura.literalura.LiterAlura.modelo.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 
 /**
@@ -30,7 +30,7 @@ public interface RepositorioAutor extends JpaRepository<Autor, Long> {
     /**
      * Metodo alternativo usando nome de consulta derivado
      *
-     * @param anoNascimento O ano de nascimento maximo
+     * @param anoNascimento  O ano de nascimento maximo
      * @param anoFalecimento O ano de falecimento minimo
      * @return Lista de autores que nasceram antes ou no ano especificado e morreram depois ou no ano especificado
      */

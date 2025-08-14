@@ -32,6 +32,7 @@ public class ServicoApiGutendex {
 
     /**
      * Busca livros por titulo
+     *
      * @param titulo O titulo a ser buscado
      * @return Optional contendo o primeiro livro encontrado, ou vazio se nenhum for encontrado
      */
@@ -61,6 +62,7 @@ public class ServicoApiGutendex {
 
     /**
      * Analisa o primeiro livro da resposta da API
+     *
      * @param corpoResposta O corpo da resposta JSON
      * @return Optional contendo o primeiro livro, ou vazio se nenhum for encontrado
      */

@@ -8,9 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface RepositorioLivro  extends JpaRepository<Livro, Long> {
+public interface RepositorioLivro extends JpaRepository<Livro, Long> {
     /**
      * Busca um livro pelo titulo exato
+     *
      * @param titulo O titulo do livro a ser buscado
      * @return Um Optional contendo o livro se encontrado, ou vazio se nao encontrado
      */
@@ -18,6 +19,7 @@ public interface RepositorioLivro  extends JpaRepository<Livro, Long> {
 
     /**
      * Busca livros pelo titulo
+     *
      * @param titulo O titulo dos livros a serem buscados
      * @return Uma lista de livros com o titulo especificado
      */
@@ -25,6 +27,7 @@ public interface RepositorioLivro  extends JpaRepository<Livro, Long> {
 
     /**
      * Busca livros pelo idioma
+     *
      * @param idioma O idioma dos livros a serem buscados
      * @return Uma lista de livros no idioma especificado
      */
@@ -32,6 +35,7 @@ public interface RepositorioLivro  extends JpaRepository<Livro, Long> {
 
     /**
      * Conta livros por idioma
+     *
      * @param idioma O idioma dos livros a serem contados
      * @return O numero de livros no idioma especificado
      */

@@ -1,10 +1,10 @@
 package br.com.alura.literalura.LiterAlura.servico;
 
-import java.util.List;
-
 import br.com.alura.literalura.LiterAlura.modelo.Autor;
 import br.com.alura.literalura.LiterAlura.repository.RepositorioAutor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * Servico para operacoes relacionadas a autores
@@ -20,6 +20,7 @@ public class ServicoAutor {
 
     /**
      * Obtem todos os autores do banco de dados
+     *
      * @return Lista de todos os autores
      */
     public List<Autor> obterTodosAutores() {
@@ -28,6 +29,7 @@ public class ServicoAutor {
 
     /**
      * Busca autores que estavam vivos em um ano especifico
+     *
      * @param ano O ano para verificar
      * @return Lista de autores que estavam vivos no ano especificado
      */

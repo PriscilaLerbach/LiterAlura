@@ -19,8 +19,10 @@ public class ServicoLivro {
         this.repositorioLivro = repositorioLivro;
         this.servicoApiGutendex = servicoApiGutendex;
     }
+
     /**
      * Busca um livro por titulo na API e salva no banco de dados
+     *
      * @param titulo O titulo a ser buscado
      * @return Optional contendo o livro se encontrado, ou vazio se nao encontrado
      */
@@ -75,6 +77,7 @@ public class ServicoLivro {
 
     /**
      * Busca todos os livros por título
+     *
      * @param titulo O título a ser buscado
      * @return Lista de livros com o título especificado
      */
@@ -84,6 +87,7 @@ public class ServicoLivro {
 
     /**
      * Obtem todos os livros do banco de dados
+     *
      * @return Lista de todos os livros
      */
     public List<Livro> obterTodosLivros() {
@@ -92,6 +96,7 @@ public class ServicoLivro {
 
     /**
      * Obtem livros por idioma
+     *
      * @param idioma O idioma para filtrar
      * @return Lista de livros no idioma especificado
      */
@@ -101,6 +106,7 @@ public class ServicoLivro {
 
     /**
      * Conta livros por idioma
+     *
      * @param idioma O idioma para contar
      * @return O numero de livros no idioma especificado
      */
@@ -110,6 +116,7 @@ public class ServicoLivro {
 
     /**
      * Obtem estatisticas sobre livros por idioma
+     *
      * @return Mapa de idioma para contagem
      */
     public Map<String, Long> obterEstatisticasLivrosPorIdioma() {
